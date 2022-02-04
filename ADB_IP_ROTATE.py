@@ -6,7 +6,6 @@ import requests
 version = '1.0.0'
 adb = "E:\\android-SDK\\platform-tools\\adb.exe" # Please edit with your own path.
 phone_id = 'RZ8MC0Q0Y5Y' # Use emulator -list-avds to find your device name.
-jsonfile = ''
 console = Console()
 cmdAirPlane_show = adb+" -s "+phone_id+" shell am start -a android.settings.AIRPLANE_MODE_SETTINGS" # load airplane screen activity
 cmdAirPlane_on = adb+" -s "+phone_id+" shell settings put global airplane_mode_on 0" # setting airplane mode on.
